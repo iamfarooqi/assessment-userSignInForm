@@ -1,1 +1,47 @@
 
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Home</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div style="width: 30%">
+        <h2>SIGN IN FORM</h2>
+        <form class="signup-form" onsubmit="return login()">
+          <div class="form-group">
+            <input
+              type="email"
+              id="login-email"
+              class="form-control"
+              placeholder="Email Address"
+              required="required"
+            />
+            <div id="email-error" class="error-message"></div>
+          </div>
+
+          <div class="form-group">
+            <input
+              type="password"
+              id="login-password"
+              class="form-control"
+              placeholder="Password"
+              required="required"
+            />
+            <div id="password-error" class="error-message"></div>
+          </div>
+
+          <div class="form-group text-center">
+            <button type="submit" class="btn btn-blue btn-block">
+              Sign In
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
